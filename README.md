@@ -34,8 +34,5 @@ See the full [Privacy Policy](PRIVACY_POLICY.md) for complete details.
 
 ## How to Load in Chrome (Developer Mode)
 
-1. Download or clone this repository locally.
-2. Open Chrome and navigate to `chrome://extensions`.
-3. Enable **Developer mode** in the top-right toggle.
-4. Click **Load unpacked** and select the downloaded repository folder.
-5. Open [YouTube Music](https://music.youtube.com/), play a song, and click **Share lyrics** in the bottom-right corner!
+1. Install from Chrome Web Store (https://chromewebstore.google.com/detail/aecjdfonfkkcmiobjclknjejeblhldob) 
+2. Open [YouTube Music](https://music.youtube.com/), play a song, and click **Share lyrics** in the bottom-right corner!
