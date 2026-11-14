@@ -20,8 +20,8 @@ When **"Share anonymous usage stats"** is enabled (default ON), the background s
 ### Exactly what is collected
 - **Install & update lifecycle:** `extension_installed` / `extension_updated` (`version`, `previous_version`).
 - **Studio opens:** `studio_opened` (`video_id`, `track_title`, `artist`, `has_lyrics`, `lyrics_line_count`).
-- **Card exports & shares:** `lyric_card_exported` (`action`, `video_id`, `track_title`, `artist`, `album`, `theme`, `size`, `selected_line_count`, `selection_mode`, `line_indices`, `original_text`, SHA-256 `snippet_key`, `is_edited`, `edit_type`, `similarity`, `final_char_count`). User-edited/typed text is **not** sent by default.
-- **Individual shared lyric lines:** `lyric_line_shared` (up to 8 original lines per non-custom export: `video_id`, `track_title`, `artist`, `line_index`, original `line_text`, SHA-256 `line_key`, `is_edited`, `action`).
+- **Card exports & shares:** `lyric_card_exported` (`action`, `video_id`, `track_title`, `artist`, `album`, `theme`, `size`, `selected_line_count`, `selection_mode`, `line_indices`, SHA-256 `snippet_key`, `is_edited`, `edit_type`, `similarity`, `final_char_count`). No lyric text or user-edited text is transmitted.
+- **Individual shared lyric lines:** `lyric_line_shared` (up to 8 selected lines per non-custom export: `video_id`, `track_title`, `artist`, `line_index`, one-way SHA-256 `line_key`, `is_edited`, `action`). Plaintext lyrics are never transmitted.
 - **UI & error telemetry:** `edit_text_opened` (`video_id`), `link_copied` (`video_id`, `had_playlist_params`), and `analytics_error` (`stage`, `error_name`, short URL-stripped `message`), plus `extension_version`, `browser_language`, and `$lib`.
 
 ### What is NEVER collected
